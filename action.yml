@@ -1,0 +1,9 @@
+name: 'Test Shell'
+description: 'display output'
+runs:
+  using: "composite"
+  steps:
+    - name: echo into summary
+      shell: bash
+      run: echo testing 123 >> "$GITHUB_STEP_SUMMARY"
+     
